@@ -102,5 +102,15 @@ h3 {
     padding: 16px 36px;
   }
 }
+/*** Top Question ***/
+#top-question {
+  padding: 101px 0px 90px 0px;
+}
+
+/*** Footer ***/
+footer {
+  background-color: #112d35;
+  padding: 24px 0px 16px 0px;
+}
 
 /*# sourceMappingURL=style.css.map */

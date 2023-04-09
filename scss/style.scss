@@ -6,6 +6,7 @@ $montserrat: "Montserrat", sans-serif;
 $black: #000000;
 $white: #ffff;
 $darkoliv: #3f555d;
+$deepliv: #112d35;
 $deepskyblue: #1f94aa;
 
 @mixin media($screen) {
@@ -106,3 +107,7 @@ h3 {
     padding: 16px 36px;
   }
 }
+
+@import "./header";
+@import "./top-questions";
+@import "./footer";
