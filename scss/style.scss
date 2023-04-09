@@ -2,43 +2,107 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
 
 /*** Variable ***/
-$montserrat: 'Montserrat', sans-serif;
+$montserrat: "Montserrat", sans-serif;
 $black: #000000;
+$white: #ffff;
+$darkoliv: #3f555d;
+$deepskyblue: #1f94aa;
 
 @mixin media($screen) {
-    @media only screen and (min-width: $screen) {
-        @content;
-    }
+  @media only screen and (min-width: $screen) {
+    @content;
+  }
 }
 
 /*** Global Style ***/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: $montserrat;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $montserrat;
 }
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-h1{
-    font-size: 24px;
-    font-weight: 700;
-    color: $black;
-    line-height: 32px;
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  color: $black;
 }
-@include media(768px) {
-    h1{
-        font-size: 36px;
-        line-height: 48px;
-    }
+h1 {
+  font-size: 24px;
+  line-height: 32px;
+}
+h2 {
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 16px;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 600;
 }
 @include media(1440px) {
-    h1{
-        font-size: 48px;
-        line-height: 58px;
-    }
+  h1 {
+    font-size: 48px;
+    line-height: 58px;
+  }
+  h2 {
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 24px;
+  }
+  h3 {
+    font-size: 32px;
+  }
+}
+
+/*** Common Class ***/
+.common-pera {
+  font-size: 14px;
+  font-weight: 500;
+  color: $darkoliv;
+  line-height: 22px;
+}
+.small-pera {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 18px;
+}
+.container {
+  max-width: 343px;
+  margin: auto;
+}
+.btn {
+  background-color: $deepskyblue;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 50px;
+
+  a {
+    color: $white;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+  }
+}
+@include media(1440px) {
+  .common-pera {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .small-pera {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .container {
+    max-width: 1240px;
+  }
+  .btn {
+    padding: 16px 36px;
+  }
 }
