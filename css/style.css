@@ -102,6 +102,11 @@ h3 {
     padding: 16px 36px;
   }
 }
+.border {
+  border-bottom: 3px solid #3f555d;
+  border-radius: 5px;
+}
+
 /*** Top Question ***/
 #top-question {
   padding: 101px 0px 90px 0px;
