@@ -93,6 +93,9 @@ h3 {
     line-height: 19px;
   }
 }
+.border {
+  border-bottom: 4px solid $deepskyblue;
+}
 @include media(1440px) {
   .common-pera {
     font-size: 15px;
@@ -113,6 +116,7 @@ h3 {
 @import "./header";
 @import "./ass-see-on";
 @import "./content";
+@import "./chance-of-conception";
 @import "./inito-tracks";
 @import "./hormons";
 @import "./fingertips";
