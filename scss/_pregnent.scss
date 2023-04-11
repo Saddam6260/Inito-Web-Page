@@ -1,0 +1,63 @@
+/*** Pregnent ***/
+#get-pregnent {
+  .container {
+    h2 {
+      margin-bottom: 30px;
+      padding-right: 80px;
+    }
+
+    .wrapper{
+      display: flex;
+      flex-flow: column wrap;
+      .img-wrap {
+        max-width: 343px;
+        margin-bottom: 15px;
+
+        img {
+          width: 100%;
+        }
+      }
+      .content {
+        h2 {
+          padding-right: 60px;
+          margin-bottom: 16px;
+        }
+        p:nth-child(3) {
+          margin: 15px 0px 15px 0px;
+        }
+      }
+    }
+  }
+}
+
+@include media(1440px) {
+  #get-pregnent {
+    .container {
+      h2 {
+        margin-bottom: 60px;
+        padding-right: 0px;
+      }
+
+      .wrapper {
+        flex-flow: row wrap;
+        column-gap: 100px;
+        align-items: center;
+
+        .img-wrap {
+          max-width: 600px;
+          margin-bottom: 0px;
+        }
+        .content {
+          width: 480px;
+          h2 {
+            padding-right: 60px;
+            margin-bottom: 24px;
+          }
+          p:nth-child(3) {
+            margin: 15px 0px 15px 0px;
+          }
+        }
+      }
+    }
+  }
+}

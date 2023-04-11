@@ -262,6 +262,7 @@ h3 {
     row-gap: 0px;
     column-gap: 110px;
     align-items: center;
+    justify-content: end;
   }
   #chance-of-conception .container div:nth-child(1) {
     width: 463px;
@@ -291,6 +292,55 @@ h3 {
   }
   .progestorone .common-pera:nth-child(4) {
     font-size: 12px;
+  }
+}
+/*** Pregnent ***/
+#get-pregnent .container h2 {
+  margin-bottom: 30px;
+  padding-right: 80px;
+}
+#get-pregnent .container .wrapper {
+  display: flex;
+  flex-flow: column wrap;
+}
+#get-pregnent .container .wrapper .img-wrap {
+  max-width: 343px;
+  margin-bottom: 15px;
+}
+#get-pregnent .container .wrapper .img-wrap img {
+  width: 100%;
+}
+#get-pregnent .container .wrapper .content h2 {
+  padding-right: 60px;
+  margin-bottom: 16px;
+}
+#get-pregnent .container .wrapper .content p:nth-child(3) {
+  margin: 15px 0px 15px 0px;
+}
+
+@media only screen and (min-width: 1440px) {
+  #get-pregnent .container h2 {
+    margin-bottom: 60px;
+    padding-right: 0px;
+  }
+  #get-pregnent .container .wrapper {
+    flex-flow: row wrap;
+    column-gap: 100px;
+    align-items: center;
+  }
+  #get-pregnent .container .wrapper .img-wrap {
+    max-width: 600px;
+    margin-bottom: 0px;
+  }
+  #get-pregnent .container .wrapper .content {
+    width: 480px;
+  }
+  #get-pregnent .container .wrapper .content h2 {
+    padding-right: 60px;
+    margin-bottom: 24px;
+  }
+  #get-pregnent .container .wrapper .content p:nth-child(3) {
+    margin: 15px 0px 15px 0px;
   }
 }
 .border {
