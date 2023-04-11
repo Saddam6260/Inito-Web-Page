@@ -343,6 +343,35 @@ h3 {
     margin: 15px 0px 15px 0px;
   }
 }
+/*** Hormons ***/
+#hormons .container {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 24px;
+}
+#hormons .container .img-wrap {
+  max-width: 343px;
+}
+#hormons .container .img-wrap img {
+  width: 100%;
+}
+#hormons .container .content p:nth-child(3) {
+  margin: 20px 0px 24px 0px;
+}
+
+@media only screen and (min-width: 1440px) {
+  #hormons .container {
+    flex-flow: row wrap;
+    column-gap: 100px;
+    align-items: center;
+  }
+  #hormons .container .img-wrap {
+    max-width: 600px;
+  }
+  #hormons .container .content {
+    width: 480px;
+  }
+}
 .border {
   border-bottom: 3px solid #3f555d;
   border-radius: 5px;

@@ -1,0 +1,38 @@
+/*** Hormons ***/
+#hormons {
+  .container {
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 24px;
+
+    .img-wrap {
+      max-width: 343px;
+
+      img {
+        width: 100%;
+      }
+    }
+    .content {
+      p:nth-child(3) {
+        margin: 20px 0px 24px 0px;
+      }
+    }
+  }
+}
+
+@include media(1440px) {
+    #hormons {
+        .container {
+          flex-flow: row wrap;
+          column-gap: 100px;
+          align-items: center;
+      
+          .img-wrap {
+            max-width: 600px;
+          }
+          .content {
+            width: 480px;
+          }
+        }
+      }  
+}
