@@ -11,6 +11,8 @@ $deepliv: #112d35;
 $deepskyblue: #1f94aa;
 $gray: #c4c4c4;
 $thin-mauve: #f7f7fe;
+$orange: #ffd056;
+$thinskyblue: #8cc7d2;
 
 @mixin media($screen) {
   @media only screen and (min-width: $screen) {

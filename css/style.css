@@ -449,6 +449,76 @@ h3 {
     width: 207px;
   }
 }
+#inito-tells .container .content {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 16px;
+  background-color: #f7f7fe;
+  padding: 24px 24px 17px 24px;
+  border-radius: 24px;
+}
+#inito-tells .container .content div:nth-child(1) h5 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+#inito-tells .container .content div:nth-child(2) {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 8px;
+}
+#inito-tells .container .content div:nth-child(2) .star-wrap span {
+  color: #ffd056;
+}
+#inito-tells .container .content div:nth-child(2) p:nth-child(2) {
+  font-size: 14px;
+  font-weight: 600;
+}
+#inito-tells .container .content div:nth-child(2) p:nth-child(3) {
+  font-size: 14px;
+  color: #c4c4c4;
+}
+#inito-tells .slide-btn {
+  margin-top: 24px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+#inito-tells .slide-btn button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background-color: #1f94aa;
+}
+#inito-tells .slide-btn button span {
+  font-size: 18px;
+  color: #8cc7d2;
+}
+
+@media only screen and (min-width: 1440px) {
+  #inito-tells .container .content {
+    flex-flow: row wrap;
+    row-gap: 16px;
+    padding: 40px 108px 40px 40px;
+    border-radius: 40px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #inito-tells .container .content div:nth-child(1) {
+    order: 2;
+    width: 805px;
+  }
+  #inito-tells .container .content div:nth-child(2) {
+    order: 1;
+    width: 108px;
+  }
+  #inito-tells .slide-btn {
+    margin-top: 40px;
+    column-gap: 150px;
+    justify-content: center;
+  }
+}
 /*** Top Question ***/
 #top-question {
   padding: 101px 0px 90px 0px;
