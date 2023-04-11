@@ -9,6 +9,7 @@ $darkoliv: #3f555d;
 $deepliv: #112d35;
 $deepskyblue: #1f94aa;
 $gray: #c4c4c4;
+$thin-mauve: #f7f7fe;
 
 @mixin media($screen) {
   @media only screen and (min-width: $screen) {
@@ -111,6 +112,7 @@ h3 {
 
 @import "./header";
 @import "./ass-see-on";
+@import "./content";
 @import "./inito-tracks";
 @import "./hormons";
 @import "./fingertips";

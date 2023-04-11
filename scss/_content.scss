@@ -1,0 +1,39 @@
+/*** Content ***/
+#content {
+  .container {
+    div {
+      padding: 24px;
+      background-color: $thin-mauve;
+      max-width: 343px;
+      border-radius: 24px;
+    }
+  }
+}
+.inito-different {
+  margin-top: 24px;
+}
+.bold {
+  font-weight: 700;
+}
+
+@include media(1440px) {
+  #content {
+    .container {
+      div {
+        padding: 0px;
+        background-color: $white;
+        max-width: initial;
+        border-radius: 0px;
+        text-align: center;
+
+        p {
+          display: flex;
+          flex-flow: column wrap;
+        }
+      }
+    }
+  }
+  .inito-different {
+    margin-top: 80px;
+  }
+}
