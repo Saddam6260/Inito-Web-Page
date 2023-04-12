@@ -292,6 +292,66 @@ header main .container .main-content p {
     margin-top: 80px;
   }
 }
+/*** Pradict wrap ***/
+#predict-wrap {
+  margin-top: 80px;
+}
+#predict-wrap .container {
+  background-color: #f7f7fe;
+  border-radius: 24px;
+}
+#predict-wrap .container .predict .content {
+  padding: 24px 16px 23px 24px;
+}
+#predict-wrap .container .predict .content p:nth-child(3) {
+  margin: 16px 0px;
+}
+#predict-wrap .container .predict .img-wrap {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  background-image: url("../images/predict-small-dg.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 190px 260px;
+}
+#predict-wrap .container .predict .img-wrap img {
+  width: 202px;
+}
+
+@media only screen and (min-width: 1440px) {
+  #predict-wrap {
+    margin-top: 120px;
+  }
+  #predict-wrap .container {
+    border-radius: 40px;
+  }
+  #predict-wrap .container .predict {
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 132px;
+    justify-content: end;
+    align-items: center;
+  }
+  #predict-wrap .container .predict .content {
+    padding: 0px 0px 0px 0px;
+    width: 427px;
+  }
+  #predict-wrap .container .predict .content p:nth-child(3) {
+    margin: 35px 0px 50px 0px;
+  }
+  #predict-wrap .container .predict .img-wrap {
+    width: 600px;
+    padding: 80px 20px;
+    background-image: url("../images/predict-large-bg.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 480px 440px;
+  }
+  #predict-wrap .container .predict .img-wrap img {
+    width: 355px;
+  }
+}
 /*** Chance-of-conception ***/
 #chance-of-conception {
   padding: 80px 0px;

@@ -1,0 +1,67 @@
+/*** Pradict wrap ***/
+#predict-wrap {
+  margin-top: 80px;
+
+  .container {
+    background-color: $thin-mauve;
+    border-radius: 24px;
+
+    .predict {
+      .content {
+        padding: 24px 16px 23px 24px;
+
+        p:nth-child(3) {
+          margin: 16px 0px;
+        }
+      }
+      .img-wrap {
+        display: flex;
+        justify-content: center;
+        padding-top: 25px;
+        background-image: url("../images/predict-small-dg.png");
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 190px 260px;
+        img {
+          width: 202px;
+        }
+      }
+    }
+  }
+}
+
+@include media(1440px) {
+  #predict-wrap {
+    margin-top: 120px;
+    .container {
+      border-radius: 40px;
+
+      .predict {
+        display: flex;
+        flex-flow: row wrap;
+        column-gap: 132px;
+        justify-content: end;
+        align-items: center;
+        .content {
+          padding: 0px 0px 0px 0px;
+          width: 427px;
+
+          p:nth-child(3) {
+            margin: 35px 0px 50px 0px;
+          }
+        }
+        .img-wrap {
+          width: 600px;
+          padding: 80px 20px;
+          background-image: url("../images/predict-large-bg.png");
+          background-repeat: no-repeat;
+          background-position: top right;
+          background-size: 480px 440px;
+          img {
+            width: 355px;
+          }
+        }
+      }
+    }
+  }
+}
