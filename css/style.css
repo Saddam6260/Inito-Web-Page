@@ -566,7 +566,83 @@ h3 {
 #top-question {
   padding: 101px 0px 90px 0px;
 }
+#top-question .container .heading {
+  margin-bottom: 24px;
+}
+#top-question .container .questions {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 16px;
+}
+#top-question .container .questions .question {
+  padding: 24px;
+  background-color: #f7f7fe;
+  border-radius: 24px;
+}
+#top-question .container .questions .question .title {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#top-question .container .questions .question .title h5 {
+  display: flex;
+  flex-flow: column wrap;
+  font-size: 16px;
+  font-weight: 700;
+}
+#top-question .container .questions .question .title button {
+  border: none;
+  background: none;
+  font-size: 16px;
+}
+#top-question .container .questions .question .title button .minus-icon {
+  display: none;
+}
+#top-question .container .questions .question .text {
+  margin-top: 12px;
+  display: none;
+}
+#top-question .container .questions .question:nth-child(1) .title button .plus-icon {
+  display: none;
+}
+#top-question .container .questions .question:nth-child(1) .title button .minus-icon {
+  display: block;
+}
+#top-question .container .questions .question:nth-child(1) .text {
+  display: block;
+}
 
+@media only screen and (min-width: 1440px) {
+  #top-question {
+    padding: 120px 0px;
+  }
+  #top-question .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #top-question .container .heading {
+    margin-bottom: 0px;
+    width: 405px;
+  }
+  #top-question .container .questions {
+    row-gap: 24px;
+    width: 707px;
+  }
+  #top-question .container .questions .question {
+    padding: 32px;
+  }
+  #top-question .container .questions .question .title h5 {
+    flex-flow: row wrap;
+    font-size: 18px;
+    column-gap: 6px;
+  }
+  #top-question .container .questions .question .text {
+    padding-right: 20px;
+  }
+}
 /*** Footer ***/
 footer {
   background-color: #112d35;
