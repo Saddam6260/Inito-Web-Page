@@ -1,0 +1,52 @@
+/*** Inito Track ***/
+#inito-tracks {
+  padding: 40px 0px;
+
+  .container {
+    .img-wrap {
+      max-width: 343px;
+
+      img {
+        width: 100%;
+      }
+    }
+    .content {
+      h2 {
+        padding-right: 80px;
+      }
+      .common-pera:nth-child(3) {
+        margin: 16px 0px;
+      }
+    }
+  }
+}
+
+@include media(1440px) {
+  #inito-tracks {
+    padding: 80px 0px;
+
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: end;
+        align-items: center;
+        column-gap: 100px;
+      .img-wrap {
+        max-width: 600px;
+        order: 2;
+
+        img {
+          width: 100%;
+        }
+      }
+      .content {
+        width: 480px;
+        order: 1;
+        h2 {
+          padding-right: 0px;
+        }
+
+      }
+    }
+  }
+}
