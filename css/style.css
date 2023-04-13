@@ -919,6 +919,7 @@ footer .container .text-wrap a {
     height: 48px;
   }
   footer .container .footer-top .social-logo-wrap {
+    border-bottom: none;
     padding: 0px 0px;
   }
   footer .container .footer-top .social-logo-wrap .main-logo {
