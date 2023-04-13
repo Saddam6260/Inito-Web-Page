@@ -1,5 +1,6 @@
 #inito-tells {
   .container {
+    position: relative;
     .content {
       display: flex;
       flex-flow: column wrap;
@@ -31,6 +32,17 @@
           font-size: 14px;
           color: $gray;
         }
+      }
+    }
+    .tells-img{
+      width: 86px;
+      position: absolute;
+      z-index: 2;
+      top: -40px;
+      right: 0px;
+
+      img{
+        width: 100%;
       }
     }
   }
@@ -68,12 +80,16 @@
         align-items: center;
         div:nth-child(1) {
           order: 2;
-        width: 805px;
+          width: 805px;
         }
         div:nth-child(2) {
           order: 1;
           width: 108px;
         }
+      }
+      .tells-img{
+        top: -20px;
+        right: 50px;
       }
     }
 

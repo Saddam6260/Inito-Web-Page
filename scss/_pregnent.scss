@@ -3,7 +3,6 @@
   .container {
     h2 {
       margin-bottom: 30px;
-      padding-right: 80px;
     }
 
     .wrapper{
@@ -18,9 +17,20 @@
         }
       }
       .content {
-        h2 {
-          padding-right: 60px;
-          margin-bottom: 16px;
+        .unique-heading{
+          width: 218px;
+          position: relative;
+
+          .img-wrap{
+            width: 19px;
+            position: absolute;
+            top: -8px;
+            right: -20px;
+
+            img{
+              width: 100%;
+            }
+          }
         }
         p:nth-child(3) {
           margin: 15px 0px 15px 0px;
@@ -48,10 +58,15 @@
           margin-bottom: 0px;
         }
         .content {
-          width: 480px;
-          h2 {
-            padding-right: 60px;
-            margin-bottom: 24px;
+          width: 460px;
+          .unique-heading{
+            width: 100%;
+            .img-wrap{
+              width: 35px;
+              top: -8px;
+              right: -20px;
+  
+            }
           }
           p:nth-child(3) {
             margin: 15px 0px 15px 0px;

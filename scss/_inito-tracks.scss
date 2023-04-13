@@ -11,8 +11,20 @@
       }
     }
     .content {
-      h2 {
-        padding-right: 80px;
+      .track-heading{
+        width: 246px;
+        position: relative;
+
+        .img-wrap{
+          width: 20px;
+          position: absolute;
+          top: -10px;
+          right: -20px;
+
+          img{
+            width: 100%;
+          }
+        }
       }
       .common-pera:nth-child(3) {
         margin: 16px 0px;
@@ -42,8 +54,14 @@
       .content {
         width: 480px;
         order: 1;
-        h2 {
-          padding-right: 0px;
+        .track-heading{
+          width: 100%;
+  
+          .img-wrap{
+            width: 35px;
+            top: -10px;
+            right: -10px;
+          }
         }
 
       }
