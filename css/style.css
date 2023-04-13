@@ -109,7 +109,11 @@ h3 {
 /*** Header ***/
 header {
   min-height: 100vh;
-  background-color: #f7f7fe;
+  background-image: url("../images/main-bg-small.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 300px 300px;
+  position: relative;
 }
 header .navber {
   padding: 20px 0px;
@@ -140,10 +144,24 @@ header main .container .main-content h1 {
 header main .container .main-content p {
   margin: 16px 0px 24px 0px;
 }
+header .main-img {
+  width: 100%;
+  text-align: end;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+header .main-img img {
+  width: 351px;
+  margin-bottom: -4px;
+}
 
 @media only screen and (min-width: 1440px) {
   header {
-    min-height: 100vh;
+    min-height: 936px;
+    background-image: url("../images/main-mg-large.png");
+    background-position: top right;
+    background-size: 780px 890px;
   }
   header .navber {
     padding: 32px 0px;
@@ -189,6 +207,16 @@ header main .container .main-content p {
   }
   header main .container .main-content p {
     margin: 16px 0px 24px 0px;
+  }
+  header .main-img {
+    width: 100%;
+    text-align: end;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+  }
+  header .main-img img {
+    width: 803px;
   }
 }
 #ass-seen-on {
