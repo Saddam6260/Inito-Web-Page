@@ -4,6 +4,20 @@
   .container {
     .heading {
       margin-bottom: 24px;
+      width: 280px;
+      position: relative;
+
+      .text-img{
+        position: absolute;
+        width: 24px;
+        height: 21px;
+        top: -8px;
+        right: -38px;
+
+        img{
+          width: 100%;
+        }
+      }
     }
     .questions {
       display: flex;
@@ -71,6 +85,16 @@
       .heading {
         margin-bottom: 0px;
         width: 405px;
+        .text-img{
+          width: 34px;
+          height: 33px;
+          top: -8px;
+          right: -10px;
+  
+          img{
+            width: 100%;
+          }
+        }
       }
       .questions {
         row-gap: 24px;

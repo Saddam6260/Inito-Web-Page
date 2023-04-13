@@ -622,6 +622,20 @@ header .main-img img {
 #hormons .container .img-wrap img {
   width: 100%;
 }
+#hormons .container .content .hormons-heading {
+  width: 246px;
+  position: relative;
+}
+#hormons .container .content .hormons-heading .img-wrap {
+  position: absolute;
+  width: 22px;
+  height: 24px;
+  top: 20px;
+  right: -20px;
+}
+#hormons .container .content .hormons-heading .img-wrap img {
+  width: 100%;
+}
 #hormons .container .content p:nth-child(3) {
   margin: 20px 0px 24px 0px;
 }
@@ -637,6 +651,20 @@ header .main-img img {
   }
   #hormons .container .content {
     width: 480px;
+  }
+  #hormons .container .content .hormons-heading {
+    width: 480px;
+    position: relative;
+  }
+  #hormons .container .content .hormons-heading .img-wrap {
+    position: absolute;
+    width: 36px;
+    height: 39px;
+    top: 20px;
+    right: -30px;
+  }
+  #hormons .container .content .hormons-heading .img-wrap img {
+    width: 100%;
   }
 }
 #fingertips {
@@ -792,6 +820,18 @@ header .main-img img {
 }
 #top-question .container .heading {
   margin-bottom: 24px;
+  width: 280px;
+  position: relative;
+}
+#top-question .container .heading .text-img {
+  position: absolute;
+  width: 24px;
+  height: 21px;
+  top: -8px;
+  right: -38px;
+}
+#top-question .container .heading .text-img img {
+  width: 100%;
 }
 #top-question .container .questions {
   display: flex;
@@ -850,6 +890,15 @@ header .main-img img {
   #top-question .container .heading {
     margin-bottom: 0px;
     width: 405px;
+  }
+  #top-question .container .heading .text-img {
+    width: 34px;
+    height: 33px;
+    top: -8px;
+    right: -10px;
+  }
+  #top-question .container .heading .text-img img {
+    width: 100%;
   }
   #top-question .container .questions {
     row-gap: 24px;

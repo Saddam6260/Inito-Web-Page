@@ -13,6 +13,22 @@
       }
     }
     .content {
+      .hormons-heading {
+        width: 246px;
+        position: relative;
+
+        .img-wrap {
+          position: absolute;
+          width: 22px;
+          height: 24px;
+          top: 20px;
+          right: -20px;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
       p:nth-child(3) {
         margin: 20px 0px 24px 0px;
       }
@@ -21,18 +37,35 @@
 }
 
 @include media(1440px) {
-    #hormons {
-        .container {
-          flex-flow: row wrap;
-          column-gap: 100px;
-          align-items: center;
-      
+  #hormons {
+    .container {
+      flex-flow: row wrap;
+      column-gap: 100px;
+      align-items: center;
+
+      .img-wrap {
+        max-width: 600px;
+      }
+      .content {
+        width: 480px;
+
+        .hormons-heading {
+          width: 480px;
+          position: relative;
+
           .img-wrap {
-            max-width: 600px;
-          }
-          .content {
-            width: 480px;
+            position: absolute;
+            width: 36px;
+            height: 39px;
+            top: 20px;
+            right: -30px;
+
+            img {
+              width: 100%;
+            }
           }
         }
-      }  
+      }
+    }
+  }
 }
